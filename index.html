@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="readout">
+        <pre>
+.target {
+  margin: <span class="margin-readout">10px</span>;
+  padding: <span class="padding-readout">20px</span>;
+  border-width: <span class="border-readout">5px</span>;
+}
+            </pre>
+        <div class="controls">
+            <input id="margin" type="range" value="10" min="10" max="100">
+            <input id="padding" type="range" value="20" min="20" max="100">
+            <input id="border" type="range" value="5" min="5" max="50">
+            <input id="content" value="Hi" placeholder="Type something here">
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+        <div class="row">
+            <div class="square"></div>
+            <div class="target">
+                <span>Hi</span>
+            </div>
+            <div class="square"></div>
+        </div>
+        <div class="row">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
